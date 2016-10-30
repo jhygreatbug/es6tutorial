@@ -1,9 +1,22 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    concat: {
-      dist: {
-        src: ['src/**/*'],
+    copy: {
+      docs: {
+        expand: true,
+        cwd: 'src/',
+        src: [
+          'app/**',
+          'css/**',
+          'docs/**',
+          'images/**',
+          'js/**',
+          '404.html',
+          'config.js',
+          'index.html',
+          'README.md',
+          'sidebar.md'
+        ],
         dest: 'dist/'
       }
     },
@@ -17,10 +30,10 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-shell');
 
-  grunt.registerTask('default', ['concat', 'shell:update']);
+  grunt.registerTask('default', ['copy', 'shell:update']);
   grunt.registerTask('init', ['shell:init']);
 
 };
