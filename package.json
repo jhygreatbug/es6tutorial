@@ -1,0 +1,29 @@
+{
+  "name": "es6tutorial",
+  "version": "1.0.0",
+  "description": "《ECMAScript 6入门》是一本开源的JavaScript语言教程，全面介绍ECMAScript 6新引入的语法特性。",
+  "main": "config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "babel-core": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel": "^6.5.2",
+    "babel-polyfill": "^6.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhygreatbug/es6tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhygreatbug/es6tutorial/issues"
+  },
+  "homepage": "https://github.com/jhygreatbug/es6tutorial#readme"
+}
